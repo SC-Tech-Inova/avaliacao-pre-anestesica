@@ -27,7 +27,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NEXT_PUBLIC_API_URL=http://backend:3001
+      - NEXT_PUBLIC_API_URL=http://3.128.94.229:3001
     volumes:
       - .:/app
 
