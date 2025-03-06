@@ -1,11 +1,47 @@
 version: '3.8'
 
 services:
-  app:
+  backend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.backend
     ports:
-      - "80:3000"
+      - "3001:3001"
     environment:
       - NODE_ENV=production
+      - DB_USER=postgres
+      - DB_HOST=avaliacao-pre-anestesica-rds.crw28s8eu77i.us-east-2.rds.amazonaws.com
+      - DB_NAME=avaliacao_pre_anestesica
+      - DB_PASSWORD=071055
+      - DB_PORT=5432
+      - SESSION_SECRET=your-session-secret-key
+      - JWT_SECRET=your-jwt-secret-key
+      - PORT=3001
+    volumes:
+      - .:/app
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:3001
+    volumes:
+      - .:/app
+
+# Remova ou comente o serviço db, pois o banco de dados está no RDS
+# db:
+#   image: postgres:15
+#   environment:
+#     - POSTGRES_USER=postgres
+#     - POSTGRES_PASSWORD=071055
+#     - POSTGRES_DB=avaliacao_pre_anestesica
+#   volumes:
+#     - pgdata:/var/lib/postgresql/data
+#   ports:
+#     - "5432:5432"
+
+# volumes:
+#   pgdata:
