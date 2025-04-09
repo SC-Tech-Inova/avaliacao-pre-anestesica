@@ -1,0 +1,70 @@
+/* Component-specific styles for Contact */
+.contactSection {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mailSection {
+    max-width: 100%;
+}
+
+.mailText {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.massageBt {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    min-height: 120px;
+}
+
+.sendBt a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.sendBt a:hover {
+    background-color: #0056b3;
+}
+
+.mapMain {
+    width: 100%;
+    height: 100%;
+}
+
+.mapResponsive {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.mapResponsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

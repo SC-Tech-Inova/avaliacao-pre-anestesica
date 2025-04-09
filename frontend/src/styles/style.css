@@ -1,0 +1,295 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+/* Fix import paths to use valid CSS import syntax */
+@import './animate.min.css';
+@import './normalize.css';
+@import './icomoon.css';
+@import './font-awesome.min.css';
+@import './meanmenu.css';
+@import './owl.carousel.min.css';
+@import './slick.css';
+@import './jquery.fancybox.min.css';
+@import './jquery-ui.css';
+@import './nice-select.css';
+
+/* Banner Section */
+.banner_section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner_taital {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner_text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.read_bt a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.read_bt a:hover {
+    background-color: #0056b3;
+}
+
+/* Header Section */
+.header_section {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 999;
+}
+
+.custom_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.custom_menu ul li {
+    margin-right: 20px;
+}
+
+.custom_menu ul li:last-child {
+    margin-right: 0;
+}
+
+.custom_menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom_menu ul li a:hover, 
+.custom_menu ul li.active a {
+    color: #007bff;
+}
+
+.custom_menu ul li a.btn-primary {
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+/* Treatment Section */
+.treatment_section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.treatment_taital {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.care_text {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.number_text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.treatment_text {
+    margin-bottom: 20px;
+}
+
+.readmore_bt a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.readmore_bt a:hover {
+    background-color: #0056b3;
+}
+
+.readmore_bt.active a {
+    background-color: #28a745;
+}
+
+/* Doctores Section */
+.doctores_section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.doctores_taital {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.doctores_box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.image_1 {
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.image_1 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.doctores_box:hover .image_1 img {
+    transform: scale(1.05);
+}
+
+.humour_text {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mbbs_text {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact_section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.contact_taital {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mail_text {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.massage-bt {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    min-height: 120px;
+}
+
+.send_bt a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.send_bt a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer_section {
+    background-color: #212529;
+    padding: 50px 0 0;
+    color: #fff;
+}
+
+.footer_section_2 {
+    padding: 30px 0;
+}
+
+.footer_taital {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.location_main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.location_main li {
+    margin-bottom: 15px;
+}
+
+.location_main a {
+    color: #adb5bd;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.location_main a:hover {
+    color: #fff;
+}
+
+.padding_15 {
+    padding-left: 15px;
+}
+
+/* Copyright section */
+.copyright_section {
+    background-color: #17191c;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.copyright_text {
+    margin: 0;
+    color: #adb5bd;
+    font-size: 14px;
+}
